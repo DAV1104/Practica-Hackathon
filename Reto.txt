@@ -1,0 +1,35 @@
+Desafío:
+
+
+Crear una aplicación web llamada "Mi Agenda" que permita a los usuarios gestionar sus citas y compromisos.
+
+
+Requisitos funcionales:
+
+
+
+Crear una página de inicio que muestre las próximas citas programadas.
+
+Permitir a los usuarios crear nuevas citas con fecha, hora y título.
+
+Permite a los usuarios eliminar o actualizar citas existentes.
+
+Mostrar un calendario en la parte superior de la aplicación para que los usuarios puedan navegar por fechas diferentes.
+
+Crear un botón "Today" que muestre las citas programadas para el día actual.
+
+Crear un botón "Week" que muestre las citas programadas para la semana actual.
+
+
+Requisitos no funcionales:
+
+
+
+Diseñar una interfaz de usuario atractiva y fácil de usar.
+
+Utilizar HTML, CSS y JavaScript para crear la aplicación web.
+
+Garantizar que la aplicación sea compatible con los navegadores modernos (Google Chrome, Mozilla Firefox, Microsoft Edge).
+
+Asegurarse de que la aplicación cumpla con las normas de accesibilidad web (WCAG 2.1).
+
