@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/main.css" />
+    <title>Mi agenda</title>
+    <script src="../static/js/main.js"></script>
+  </head>
+  <body>
+    <div class="formato">
+      <div class="tittle">Mi agenda</div>
+
+      <div class="eleccion">
+        <button class="boton" onclick="mostrarContenido()">
+          Iniciar sesion
+        </button>
+        <button class="boton" onclick="mostrarContenido2()">Registrarse</button>
+      </div>
+      <div id="contenido_oculto">
+        <ul class="inputs">
+          <input type="text" placeholder="Usuario" />
+          <input type="password" placeholder="Contraseña" />
+          <a class="pointer">He olvidado mi contraseña</a>
+          <a href="citas.html"><button class="aceptar">Aceptar</button></a>
+        </ul>
+       
+      </div>
+
+      <div id="contenido_oculto2">
+        <ul class="inputs">
+            <input type="text" placeholder="Usuario" />
+            <input type="password" placeholder="Contraseña" />
+            <input type="password" placeholder="Confirmar contraseña">
+            <input type="text" placeholder="Contacto">
+
+        <a href="#"><button class="aceptar">Aceptar</button></a>
+        </ul>
+        
+      </div>
+    </div>
+  </body>
+</html>
