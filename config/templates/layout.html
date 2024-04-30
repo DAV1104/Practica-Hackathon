@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../static/css/main.css" />
-    <title>Mi agenda</title>
-    <script src="../static/js/main.js"></script>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
+    <title>{% block title %}Mi agenda{% endblock %}</title>
   </head>
   <body>
     <div class="formato">
@@ -19,25 +21,29 @@
       </div>
       <div id="contenido_oculto">
         <ul class="inputs">
-          <input type="text" placeholder="Usuario" />
+          <input type="text" placeholder="Nombre" />
           <input type="password" placeholder="Contraseña" />
           <a class="pointer">He olvidado mi contraseña</a>
-          <a href="citas.html"><button class="aceptar">Aceptar</button></a>
+          <!-- url_for es para especificar las rutas y se maneja de la siguiente forma url_for('carpeta padre', filename='nombre del archivo') -->
+          <a href="{{ url_for('templates', filename='citas.html' )}}"><button class="aceptar">Aceptar</button></a>
         </ul>
-       
       </div>
 
       <div id="contenido_oculto2">
         <ul class="inputs">
-            <input type="text" placeholder="Usuario" />
-            <input type="password" placeholder="Contraseña" />
-            <input type="password" placeholder="Confirmar contraseña">
-            <input type="text" placeholder="Contacto">
+          <input type="text" placeholder="Contacto" name="nombre"/>
+          <input type="text" placeholder="Usuario" name="usuario"/>
+          <input type="password" placeholder="Contraseña" name="contraseña"/>
+          <input type="password" placeholder="Confirmar contraseña" />
 
-        <a href="#"><button class="aceptar">Aceptar</button></a>
+          <a href="#"><button class="aceptar">Aceptar</button></a>
         </ul>
-        
       </div>
     </div>
+
+    {% block body %}
+    {% endblock %}
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
   </body>
 </html>
